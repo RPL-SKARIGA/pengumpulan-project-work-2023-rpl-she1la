@@ -1,0 +1,374 @@
+* {
+  font-family: montserrat;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: f1fbff;
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-dark .navbar-brand:focus,
+.navbar-dark .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .navbar-link {
+  color: #fff;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+.services .card-body i {
+  font-size: 50px;
+}
+
+/* responsive */
+@media only screen and(min-width: 768px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 370px;
+  }
+  .carousel-caption p {
+    width: 100%;
+  }
+}
+
+@media only screen and(max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 125px;
+  }
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+}
+
+/*card index*/
+.button-fitur {
+  width: 200px;
+  height: 50px;
+  background-color: darkslategray;
+  border: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#play h2 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.img-card {
+  width: 100%;
+  height: auto;
+}
+
+.card-fitur h5 {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.card-fitur span {
+  color: #fff;
+  font-size: 14px;
+}
+
+.card-fitur h6 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.card-fitur button {
+  background-color: darkslategray;
+  color: #fff;
+  border: none;
+  width: 150px;
+  height: 45px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-fitur .overlay {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.card-fitur .overlay:hover {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+}
+
+.sampul {
+  width: 500px;
+  height: 500px;
+}
+
+/* books start */
+.book {
+  background: #f9f9f9;
+  padding: 50px;
+}
+
+.main-text h1 {
+  text-align: center;
+  text-shadow: 0px 1px 1px black;
+  font-weight: 600;
+}
+
+.main-text h1 span {
+  color: #ffa500;
+}
+
+.book .card {
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.book .row {
+  margin-top: 30px;
+}
+
+.book form input {
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px -6px black;
+}
+
+.book form textarea {
+  border: none;
+  border-radius: 10px;
+  resize: none;
+  box-shadow: 0px 5px 5px -6px black;
+  height: 50px;
+}
+
+.book .submit {
+  width: 160px;
+  font-size: 16px;
+  font-weight: 550;
+  background: #ffa500;
+  color: black;
+  margin-top: 10px;
+  transition: 0.5;
+}
+
+.book .submit:hover {
+  width: 170px;
+}
+
+@media (max-width: 760px) {
+  .book {
+    padding: 0;
+  }
+  .main-text h1 {
+    margin-top: 20px;
+  }
+}
+/* books end */
+
+/* package start */
+.main-txt h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px black;
+}
+
+main-txt h1 span {
+  color: #ffa500;
+}
+
+.packages .card {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 1) 0px 4px 12px;
+}
+
+.packages .card img {
+  border-radius: 5px;
+}
+
+.packages .card .card-body {
+  background: transparent;
+}
+
+.packages .card .card-body h3 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.packages .card .card-body p {
+  font-size: 15px;
+}
+
+.cheked {
+  color: #ffa500;
+}
+
+.star i {
+  font-size: 15px;
+}
+
+.packages .card .card-body h6 {
+  font-size: 20px;
+}
+
+.packages .card .card-body a {
+  padding: 10px;
+  text-decoration: none;
+  background: #ffa500;
+  color: white;
+}
+/* package end */
+
+/* section layanan start */
+.services {
+  background: #f9f9f9;
+  padding: 50px;
+}
+/* section layanan end */
+
+/* ========================================================================== */
+
+/* Halaman Play.php start */
+.custom-highlight{
+  color: #dc3545;
+  font-family: 'Roboto', sans-serif;
+}
+
+.custom-card{
+  border-radius: 20px;
+  padding: 5px;
+  border: none;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border: none ;
+}
+
+.custom-img-width{
+  width: 80px;
+}
+
+.custom-service-card{
+  border-radius: 10px ;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border: none;
+}
+
+.custom-footer{
+  background-color: transparent;
+  border: none;
+}
+
+.custom-bg{
+  height: 200px;
+  background: #f1f1f1;
+  border-radius: 12px;
+}
+/* Halaman Play.php end */
+
+.play{
+  background-color: #f9f9f9;
+  margin: 0px;
+}
+
+.txt-play{
+  font-family: 'Roboto', sans-serif;
+}
+
+.div{
+  display: block;
+}
+
+.custom-oi{
+  font-family: 'Bebas Neue', sans-serif; 
+  color:#363958;
+  padding: 0px;
+  margin: 0px;
+}
+
+#header{
+  height: 100vh;
+  padding: 85px 0 70px;
+  background-color: #f4f5ff;
+}
+
+#header span{
+  font-weight: 700;
+}
